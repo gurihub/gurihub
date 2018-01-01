@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersRepositoriesTable extends Migration
+class CreateTopicsTable extends Migration
 {
 
 	/**
@@ -13,7 +13,7 @@ class CreateUsersRepositoriesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('users_repositories', function(Blueprint $table) {
+		Schema::create('topics', function(Blueprint $table) {
             $table->increments('id');
 
             $table->timestamps();
@@ -27,7 +27,7 @@ class CreateUsersRepositoriesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::drop('users_repositories');
+		Schema::drop('topics');
 	}
 
 }
