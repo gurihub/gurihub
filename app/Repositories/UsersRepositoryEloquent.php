@@ -4,15 +4,15 @@ namespace App\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Repositories\UsersRepositoryRepository;
-use App\Models\UsersRepository;
-use App\Validators\UsersRepositoryValidator;
+use App\Repositories\UsersRepository;
+use App\Models\Users;
+use App\Validators\UsersValidator;
 
 /**
- * Class UsersRepositoryRepositoryEloquent
+ * Class UsersRepositoryEloquent
  * @package namespace App\Repositories;
  */
-class UsersRepositoryRepositoryEloquent extends BaseRepository implements UsersRepositoryRepository
+class UsersRepositoryEloquent extends BaseRepository implements UsersRepository
 {
     /**
      * Specify Model class name
@@ -21,7 +21,7 @@ class UsersRepositoryRepositoryEloquent extends BaseRepository implements UsersR
      */
     public function model()
     {
-        return UsersRepository::class;
+        return Users::class;
     }
 
     
