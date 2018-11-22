@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Prettus\Repository\Providers\RepositoryServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //注册仓库服务提供者
-        $this->app->register(RepositoryServiceProvider::class);
+        //
     }
 }
